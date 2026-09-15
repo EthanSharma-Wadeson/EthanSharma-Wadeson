@@ -6,7 +6,7 @@ Usage: python generate_streak_svg.py [username] [output.svg]
 import sys, json, os, datetime, urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-USER = sys.argv[1] if len(sys.argv) > 1 else os.environ.get("GH_PROFILE_USER", "hxrshityadav")
+USER = sys.argv[1] if len(sys.argv) > 1 else os.environ.get("GH_PROFILE_USER", "EthanSharma-Wadeson")
 OUT  = sys.argv[2] if len(sys.argv) > 2 else os.path.join(HERE, "..", "contrib-heatmap.svg")
 
 def get_data(user):

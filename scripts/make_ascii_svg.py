@@ -99,11 +99,14 @@ parts.append(f'<rect width="{CANVAS_W}" height="{CANVAS_H}" rx="12" fill="url(#b
 parts.append(f'<rect x="0.5" y="0.5" width="{CANVAS_W-1}" height="{CANVAS_H-1}" rx="12" '
              f'fill="none" stroke="{FRAME}" stroke-width="1"/>')
 
+USER_HANDLE = os.environ.get("GH_PROFILE_USER", "EthanSharma-Wadeson")
+FULL_NAME = os.environ.get("PROFILE_FULL_NAME", "Ethan Sharma-Wadeson")
+
 parts.append(f'<line x1="0" y1="{TITLEBAR_H}" x2="{CANVAS_W}" y2="{TITLEBAR_H}" stroke="{FRAME}"/>')
 for i, dotcol in enumerate(["#ff5f56", "#ffbd2e", "#27c93f"]):
     parts.append(f'<circle cx="{PAD + i*16}" cy="{TITLEBAR_H/2}" r="5" fill="{dotcol}"/>')
 parts.append(f'<text x="{CANVAS_W/2}" y="{TITLEBAR_H/2 + 4}" fill="{TITLE_TEXT}" font-size="12" '
-             f'text-anchor="middle">harshit@github: ~$ ./portrait.sh</text>')
+             f'text-anchor="middle">{USER_HANDLE}@github: ~$ ./portrait.sh</text>')
 
 # one <text> per row (single color -> no per-char markup, tiny file)
 font_size = CELL_H * 0.86
@@ -136,10 +139,12 @@ for ry, line in enumerate(rows_txt):
 # status bar with a steady blinking cursor
 status_line_y = TITLEBAR_H + ART_H + PAD * 0.35
 status_y = status_line_y + 19
+whoami_str = f"{USER_HANDLE}@github:~$ whoami {FULL_NAME}"
+cursor_offset = PAD + int(len(whoami_str) * 7.6)
 parts.append(f'<line x1="0" y1="{status_line_y:.1f}" x2="{CANVAS_W}" y2="{status_line_y:.1f}" stroke="{FRAME}"/>')
 parts.append(f'<text x="{PAD}" y="{status_y:.1f}" fill="{TITLE_TEXT}" font-size="13">'
-             f'harshit@github:~$ whoami <tspan fill="{INK}">Harshit Yadav</tspan></text>')
-parts.append(f'<rect x="{PAD+218}" y="{status_y-12:.1f}" width="8" height="14" fill="{INK}">'
+             f'{USER_HANDLE}@github:~$ whoami <tspan fill="{INK}">{FULL_NAME}</tspan></text>')
+parts.append(f'<rect x="{cursor_offset}" y="{status_y-12:.1f}" width="8" height="14" fill="{INK}">'
              f'<animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" '
              f'dur="1s" repeatCount="indefinite"/></rect>')
 

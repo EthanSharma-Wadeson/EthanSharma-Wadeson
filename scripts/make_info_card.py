@@ -43,30 +43,28 @@ ACCENT = "#22d3ee"
 #    ("bul", text)          -> green dot + light bullet
 #    ("gap",)               -> a little vertical space
 # ===========================================================================
-HOST = "hxrshityadav"   # shown as  hxrshityadav@github  in the header
+HOST = "EthanSharma-Wadeson"
 
 ROWS = [
     ("host",),
-    ("kv", "Now",      "Fullstack Developer & AI Builder"),
-    ("kv", "Focus",    "SaaS products · developer tooling"),
-    ("kv", "Building", "AI-powered web apps end-to-end"),
+    ("kv", "Now",      "Building NVE · polymathic learning"),
+    ("kv", "Focus",    "Markets · language · physical systems"),
+    ("kv", "Building", "Things I don't completely understand yet"),
     ("gap",),
     ("sec", "Stack"),
-    ("kv", "Frontend",  "React · Next.js · TypeScript"),
-    ("kv", "Backend",   "Node.js · Express · PostgreSQL"),
-    ("kv", "AI / ML",   "OpenAI · LangChain · Hugging Face"),
-    ("kv", "Cloud",     "Vercel · Docker · AWS"),
-    ("kv", "Tools",     "Git · Prisma · Tailwind CSS"),
+    ("kv", "Core",      "Python"),
+    ("kv", "AI / ML",   "Machine learning · neural nets · agents"),
+    ("kv", "NLP",       "Semantic analysis · narrative instability"),
+    ("kv", "Security",  "Cybersecurity"),
+    ("kv", "Practice",  "Competitive programming"),
     ("gap",),
     ("sec", "Links"),
-    ("kv", "Portfolio", "harshityadav.dev"),
-    ("kv", "LinkedIn",  "in/hxrshityadav"),
-    ("kv", "X / Twitter", "@harshityadav"),
-    ("kv", "Instagram", "@hxrshityadav"),
+    ("kv", "Site",      "semdrift.com"),
+    ("kv", "GitHub",    "EthanSharma-Wadeson"),
     ("gap",),
     ("sec", "Highlights"),
-    ("bul", "Open-source contributor & AI app builder"),
-    ("bul", "Ships full products solo, fast"),
+    ("bul", "NVE — NLP for narrative instability in markets"),
+    ("bul", "Physics sims from scratch, then ML on top"),
 ]
 
 

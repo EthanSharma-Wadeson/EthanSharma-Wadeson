@@ -12,7 +12,7 @@ jobs:
   refresh-graph:
     runs-on: ubuntu-latest
     env:
-      GH_PROFILE_USER: hxrshityadav
+      GH_PROFILE_USER: EthanSharma-Wadeson
 
     steps:
       - uses: actions/checkout@v4
@@ -30,7 +30,7 @@ jobs:
         run: python scripts/fetch_contributions.py
 
       - name: Render heatmap SVG
-        run: python scripts/generate_streak_svg.py hxrshityadav contrib-heatmap.svg
+        run: python scripts/generate_streak_svg.py $GH_PROFILE_USER contrib-heatmap.svg
 
       - name: Commit and push (if changed)
         run: |
