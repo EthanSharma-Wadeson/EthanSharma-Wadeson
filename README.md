@@ -4,7 +4,7 @@
 
 <table>
 <tr>
-<td valign="top" width="370"><img src="./gojo-portrait.svg" width="370" alt="Limitless — Satoru Gojo inspired profile animation" /></td>
+<td valign="top" width="370"><img src="./gojo-portrait.svg" width="370" alt="Gojo portrait with scrolling Python overlay" /></td>
 <td valign="top" width="490"><img src="./wordmark.svg" width="490" alt="ETHAN — 3D ASCII wordmark" /></td>
 </tr>
 </table>
