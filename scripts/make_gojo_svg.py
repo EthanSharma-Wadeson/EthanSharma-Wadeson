@@ -6,8 +6,7 @@ import os
 import re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-OUT = os.path.join(HERE, "..", "gojo-portrait.svg")
-OUT_ALIAS = os.path.join(HERE, "..", "harshit-ascii.svg")
+OUT = os.path.join(HERE, "..", "code-scroll.svg")
 
 USER_HANDLE = os.environ.get("GH_PROFILE_USER", "EthanSharma-Wadeson")
 FULL_NAME = os.environ.get("PROFILE_FULL_NAME", "Ethan Sharma-Wadeson")
@@ -177,10 +176,9 @@ def main():
 </rect>
 </svg>
 '''
-    for path in (OUT, OUT_ALIAS):
-        with open(path, "w", encoding="utf-8") as f:
-            f.write(svg)
-        print(f"wrote {path}  {os.path.getsize(path)/1024:.1f} KB")
+    with open(OUT, "w", encoding="utf-8") as f:
+        f.write(svg)
+    print(f"wrote {OUT}  {os.path.getsize(OUT)/1024:.1f} KB")
 
 
 if __name__ == "__main__":
