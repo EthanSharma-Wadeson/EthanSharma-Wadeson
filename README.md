@@ -1,104 +1,36 @@
-# Hi, I'm Ethan Sharma-Wadeson
+# Hey, I'm Ethan 👋
 
-I build research infrastructure for quantitative and macro workflows.
+I'm interested in understanding how things work — from financial markets and language models to physical systems and software itself.
 
-Right now, my main project is the **Narrative Volatility Engine (NVE)** — a self-hosted system for measuring how financial narratives change over time.
+### What I'm building
 
----
+**Financial SaaS**
+Building **NVE**, a financial SaaS project focused on using NLP and semantic analysis to understand narrative instability and information around markets.
 
-## What NVE is
+**AI / ML**
+Exploring machine learning from the ground up, with a particular interest in NLP, agents, neural networks and systems that can learn from real-world information rather than simply following predefined rules.
 
-NVE is a **narrative telemetry observatory**.
+ **Physics & Simulation**
+Building physics simulations from scratch to understand how mathematical models translate into actual computational systems — and experimenting with using ML to learn and predict physical behaviour.
 
-It ingests text corpora (filings, macro context, news, earnings events, or client-provided datasets), converts them into embeddings, scores rolling narrative windows, and produces auditable findings and evidence exports.
+**Polymathic learning**
+I'm not particularly interested in staying inside one field. I like connecting ideas from computer science, mathematics, physics, finance and AI, and seeing what happens when they overlap.
 
-Core focus:
+### Current interests
 
-- coherence and semantic drift tracking
-- instability and instability-velocity monitoring
-- temporal safeguards against look-ahead leakage
-- local-first deployment with BYOK (Bring Your Own Key)
+* Financial technology & quantitative ideas
+* NLP and semantic analysis
+* Machine learning
+* AI agents and emergent behaviour
+* Physics simulation
+* Computational modelling
+* Algorithms & computer science
+* Building unusual projects from scratch
 
----
+### Philosophy
 
-## Why I built it
+I prefer building things I don't completely understand yet.
 
-Most research stacks measure price and volatility very well, but narrative change is often handled informally.
+The goal isn't just to learn another framework or make another basic project — it's to understand the underlying ideas well enough to build something myself.
 
-I built NVE to make narrative state measurable, reviewable, and reproducible:
-
-- from ingestion to scoring
-- from scoring to findings
-- from findings to structured evidence packs
-
-The goal is not hype or signal-selling; the goal is disciplined research telemetry.
-
----
-
-## How I engineered it
-
-I designed and implemented NVE as a modular Python system with:
-
-- source adapters for SEC, RSS, macro, and earnings context
-- a shared ingestion pipeline with timestamp validation/sanitization
-- local persistence (SQLite + Chroma vector store)
-- rolling-window Metrics v2 (coherence, drift, divergence, persistence, instability)
-- CLI + API interfaces for repeatable workflows
-- evidence export for technical and institutional review
-
----
-
-## Project proof points
-
-- ~21,368 lines of Python
-- extensive automated tests (132 passing in latest full run)
-- full CLI smoke matrix for operational command paths
-- Dockerized local deployment model
-- append-only findings archive and generated evidence packs
-
----
-
-## Stack
-
-- **Language:** Python
-- **Interfaces:** Typer CLI, FastAPI
-- **Storage:** SQLite, Chroma
-- **Packaging:** Docker / docker-compose
-- **Testing:** pytest
-- **Data modes:** local fixtures + BYOK external sources
-
----
-
-## What NVE is not
-
-- not financial advice
-- not a trading bot
-- not a buy/sell recommendation engine
-- not a black-box "AI predicts markets" product
-
-NVE is an analytical research framework and information tool.
-
----
-
-## Current direction
-
-I am currently focused on:
-
-- early-access architecture evaluations with research professionals
-- hardening documentation for pilot onboarding
-- keeping claims restrained and evidence-based
-- expanding integration options for client-owned data feeds
-
----
-
-## Open to connect
-
-I enjoy speaking with:
-
-- quant researchers
-- macro and thematic analysts
-- risk teams
-- infrastructure engineers
-
-If you care about rigorous systems, reproducibility, and local-first research tooling, feel free to connect.
 
